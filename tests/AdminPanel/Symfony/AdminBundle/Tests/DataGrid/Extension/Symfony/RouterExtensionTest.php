@@ -6,7 +6,7 @@ namespace AdminPanel\Symfony\AdminBundleBundle\Tests\DataGrid\Extension\Symfony;
 
 use AdminPanel\Symfony\AdminBundle\DataGrid\Extension\Symfony\RouterExtension;
 
-class RouterExtensionTest extends \PHPUnit_Framework_TestCase
+class RouterExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testSymfonyExtension()
     {

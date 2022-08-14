@@ -7,7 +7,7 @@ namespace AdminPanel\Symfony\AdminBundleBundle\Tests\Twig\Extension;
 use AdminPanel\Component\DataSource\Field\FieldViewInterface;
 use AdminPanel\Symfony\AdminBundle\Twig\Extension\DataSourceExtension;
 use AdminPanel\Component\DataSource\DataSourceViewInterface;
-use Symfony\Bridge\Twig\Form\TwigRenderer;
+use Symfony\Component\Form\FormRenderer;
 use Symfony\Bridge\Twig\Form\TwigRendererEngine;
 use Symfony\Bridge\Twig\Extension\FormExtension;
 use Symfony\Bridge\Twig\Extension\TranslationExtension;
@@ -17,7 +17,7 @@ use Symfony\Component\HttpKernel\Kernel;
 /**
  * @author Stanislav Prokopov <stanislav.prokopov@gmail.com>
  */
-class DataSourceExtensionTest extends \PHPUnit_Framework_TestCase
+class DataSourceExtensionTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -30,20 +30,22 @@ class DataSourceExtensionTest extends \PHPUnit_Framework_TestCase
      */
     protected $extension;
 
-    public function setUp()
+    public function setUp(): void
     {
         $subPath = version_compare(Kernel::VERSION, '2.7.0', '<') ? 'Symfony/Bridge/Twig/' : '';
-        $loader = new \Twig_Loader_Filesystem([
+        $loader = new \Twig\Loader\FilesystemLoader([
             __DIR__ . '/../../../../../../../vendor/symfony/twig-bridge/' . $subPath . 'Resources/views/Form',
             __DIR__ . '/../../../../../../../src/AdminPanel/Symfony/AdminBundle/Resources/views', // datasource base theme
         ]);
 
-        $rendererEngine = new TwigRendererEngine([
-            'form_div_layout.html.twig',
-        ]);
-        $renderer = new TwigRenderer($rendererEngine);
+//        $rendererEngine = new FormRendererEngine([
+//            'form_div_layout.html.twig',
+//        ]);
+//        $renderer = new FormRenderer($rendererEngine);
 
-        $twig = new \Twig_Environment($loader);
+        $renderer = new FormRenderer();
+
+        $twig = new \Twig\Environment($loader);
         $twig->addExtension(new TranslationExtension(new StubTranslator()));
         $twig->addExtension(new FormExtension($renderer));
         $twig->addGlobal('global_var', 'global_value');

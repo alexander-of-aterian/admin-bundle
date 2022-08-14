@@ -7,7 +7,7 @@ namespace AdminPanel\Component\DataGrid\Tests\DataMapper;
 use AdminPanel\Component\DataGrid\DataMapper\ReflectionMapper;
 use AdminPanel\Component\DataGrid\Tests\Fixtures\EntityMapper;
 
-class ReflectionMapperTest extends \PHPUnit_Framework_TestCase
+class ReflectionMapperTest extends \PHPUnit\Framework\TestCase
 {
     public function testGetter()
     {

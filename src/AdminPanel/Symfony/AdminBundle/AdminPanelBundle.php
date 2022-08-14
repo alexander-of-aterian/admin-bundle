@@ -48,10 +48,7 @@ class AdminPanelBundle extends Bundle
         $container->addCompilerPass(new MenuExtensionPass());
     }
 
-    /**
-     * @return \AdminPanel\Symfony\AdminBundle\DependencyInjection\AdminPanelExtension
-     */
-    public function getContainerExtension()
+    public function getContainerExtension(): \AdminPanel\Symfony\AdminBundle\DependencyInjection\AdminPanelExtension
     {
         if (null === $this->extension) {
             $this->extension = new AdminPanelExtension();

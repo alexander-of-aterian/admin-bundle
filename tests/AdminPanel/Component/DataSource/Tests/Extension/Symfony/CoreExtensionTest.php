@@ -12,12 +12,12 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Tests for Symfony Core Extension.
  */
-class CoreExtensionTest extends \PHPUnit_Framework_TestCase
+class CoreExtensionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Symfony\Component\HttpFoundation\Request')) {
             $this->markTestSkipped('Symfony HttpFoundation needed!');

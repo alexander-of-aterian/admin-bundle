@@ -7,14 +7,14 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Number;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColumnOptionsExtension;
 
-class NumberTest extends \PHPUnit_Framework_TestCase
+class NumberTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Number
      */
     private $column;
 
-    public function setUp()
+    public function setUp(): void
     {
         $column = new Number();
         $column->setName('number');

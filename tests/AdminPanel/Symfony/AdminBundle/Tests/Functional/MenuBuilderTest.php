@@ -26,7 +26,7 @@ class MenuBuilderTest extends KernelTestCase
     /**
      * {@inheritDoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         self::bootKernel();
 
@@ -47,7 +47,7 @@ class MenuBuilderTest extends KernelTestCase
      *
      * @return KernelInterface A KernelInterface instance
      */
-    protected static function createKernel(array $options = array())
+    protected static function createKernel(array $options = array()): KernelInterface
     {
         return new AppKernel(
             'test',

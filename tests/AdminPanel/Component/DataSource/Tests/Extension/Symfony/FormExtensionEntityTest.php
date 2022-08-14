@@ -23,12 +23,12 @@ use Symfony\Component\Security;
 /**
  * Tests for Symfony Form Extension.
  */
-class FormExtensionEntityTest extends \PHPUnit_Framework_TestCase
+class FormExtensionEntityTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Symfony\Component\Form\Form')) {
             $this->markTestSkipped('Symfony Form needed!');

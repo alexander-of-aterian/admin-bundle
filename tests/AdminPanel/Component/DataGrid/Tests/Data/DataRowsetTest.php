@@ -8,14 +8,14 @@ use AdminPanel\Component\DataGrid\Tests\Fixtures\Entity;
 use AdminPanel\Component\DataGrid\Data\DataRowset;
 use InvalidArgumentException;
 
-class DataRowsetTest extends \PHPUnit_Framework_TestCase
+class DataRowsetTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @expectedException InvalidArgumentException
      */
     public function testCreateWithInvalidData()
     {
-        $rowset = new DataRowset('Invalid Data');
+        $rowset = new DataRowset(['Invalid Data']);
     }
 
     public function testCreateRowset()

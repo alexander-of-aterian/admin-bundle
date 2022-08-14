@@ -8,7 +8,7 @@ use AdminPanel\Symfony\AdminBundle\DataGrid\Extension\Symfony\ColumnTypeExtensio
 use AdminPanel\Symfony\AdminBundle\DataGrid\Extension\View\ColumnTypeExtension\BooleanColumnExtension;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Boolean;
 
-class BooleanColumnExtensionTest extends \PHPUnit_Framework_TestCase
+class BooleanColumnExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testColumnOptions()
     {

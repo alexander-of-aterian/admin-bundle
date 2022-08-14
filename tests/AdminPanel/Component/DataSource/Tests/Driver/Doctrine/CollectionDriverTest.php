@@ -23,12 +23,12 @@ use AdminPanel\Component\DataSource\Tests\Fixtures\News;
 /**
  * Tests for Doctrine driver.
  */
-class CollectionDriverTest extends \PHPUnit_Framework_TestCase
+class CollectionDriverTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Doctrine\ORM\EntityManager')) {
             $this->markTestSkipped('Doctrine needed!');
@@ -371,7 +371,7 @@ class CollectionDriverTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($this->em);
     }

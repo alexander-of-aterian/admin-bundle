@@ -7,14 +7,14 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Money;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColumnOptionsExtension;
 
-class MoneyTest extends \PHPUnit_Framework_TestCase
+class MoneyTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Money
      */
     private $column;
 
-    public function setUp()
+    public function setUp(): void
     {
         $column = new Money();
         $column->setName('money');

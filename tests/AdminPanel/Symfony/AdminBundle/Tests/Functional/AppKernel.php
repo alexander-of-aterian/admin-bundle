@@ -17,7 +17,7 @@ class AppKernel extends Kernel
      *
      * @return \Symfony\Component\HttpKernel\Bundle\BundleInterface[] An array of bundle instances
      */
-    public function registerBundles()
+    public function registerBundles(): iterable
     {
         return [
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
@@ -64,7 +64,7 @@ class AppKernel extends Kernel
      *
      * @api
      */
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
         $loader->load(__DIR__.'/config/config.yml');
     }

@@ -10,7 +10,7 @@ use AdminPanel\Symfony\AdminBundle\DataSource\Extension\Symfony\Form\Field\FormF
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Translation\TranslatorInterface;
 
-class FormFieldExtensionTest extends \PHPUnit_Framework_TestCase
+class FormFieldExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testFormFieldExtensionForIsNullComparison()
     {

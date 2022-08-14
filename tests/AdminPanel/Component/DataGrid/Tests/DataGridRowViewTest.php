@@ -9,7 +9,7 @@ use AdminPanel\Component\DataGrid\Column\ColumnTypeInterface;
 use AdminPanel\Component\DataGrid\DataGridRowView;
 use AdminPanel\Component\DataGrid\DataGridViewInterface;
 
-class DataGridRowViewTest extends \PHPUnit_Framework_TestCase
+class DataGridRowViewTest extends \PHPUnit\Framework\TestCase
 {
     public function testCreateDataGridRowView()
     {

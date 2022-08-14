@@ -24,7 +24,7 @@ use Symfony\Component\Security\Csrf\CsrfTokenManager;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\ValidatorBuilder;
 
-class FormExtensionTest extends \PHPUnit_Framework_TestCase
+class FormExtensionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var FormExtension
@@ -36,7 +36,7 @@ class FormExtensionTest extends \PHPUnit_Framework_TestCase
      */
     private $dataGrid;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $entities = [
             new EntityCategory(1, 'category name 1'),

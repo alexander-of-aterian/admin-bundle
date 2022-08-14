@@ -12,7 +12,7 @@ use AdminPanel\Component\DataSource\DataSourceView;
 /**
  * Tests for DataSourceView.
  */
-class DataSourceViewTest extends \PHPUnit_Framework_TestCase
+class DataSourceViewTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Checks creation of view.

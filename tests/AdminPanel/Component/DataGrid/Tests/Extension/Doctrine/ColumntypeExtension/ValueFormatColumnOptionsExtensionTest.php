@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Doctrine\ColumntypeExten
 
 use AdminPanel\Component\DataGrid\Extension\Doctrine\ColumnTypeExtension\ValueFormatColumnOptionsExtension;
 
-class ValueFormatColumnOptionsExtensionTest extends \PHPUnit_Framework_TestCase
+class ValueFormatColumnOptionsExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testBuildCellViewWithGlueAndEmptyValueAsStringAndWithoutOneValue()
     {

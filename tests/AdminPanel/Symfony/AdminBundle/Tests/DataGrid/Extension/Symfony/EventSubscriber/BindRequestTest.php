@@ -6,7 +6,7 @@ namespace AdminPanel\Symfony\AdminBundleBundle\Tests\DataGrid\Extension\Symfony\
 
 use AdminPanel\Symfony\AdminBundle\DataGrid\Extension\Symfony\EventSubscriber\BindRequest;
 
-class BindRequestTest extends \PHPUnit_Framework_TestCase
+class BindRequestTest extends \PHPUnit\Framework\TestCase
 {
     public function testPreBindDataWithoutRequestObject()
     {

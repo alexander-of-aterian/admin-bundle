@@ -9,7 +9,7 @@ use AdminPanel\Component\DataGrid\Column\HeaderViewInterface;
 use AdminPanel\Component\DataGrid\Data\DataRowsetInterface;
 use AdminPanel\Component\DataGrid\DataGridView;
 
-class DataGridViewTest extends \PHPUnit_Framework_TestCase
+class DataGridViewTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \AdminPanel\Component\DataGrid\Data\DataRowsetInterface

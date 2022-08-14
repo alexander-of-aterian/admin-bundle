@@ -75,7 +75,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->cellViews);
     }
@@ -87,7 +87,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @return \AdminPanel\Component\DataGrid\Column\CellViewInterface current element from the rowset
      */
-    public function current()
+    public function current(): mixed
     {
         return current($this->cellViews);
     }
@@ -99,7 +99,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @return string
      */
-    public function key()
+    public function key(): mixed
     {
         return key($this->cellViews);
     }
@@ -111,7 +111,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @return string
      */
-    public function next()
+    public function next(): void
     {
         next($this->cellViews);
     }
@@ -121,7 +121,7 @@ class DataGridRowView implements DataGridRowViewInterface
      * Similar to the reset() function for arrays in PHP.
      * Required by interface Iterator.
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->cellViews);
     }
@@ -132,7 +132,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @return bool
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -143,7 +143,7 @@ class DataGridRowView implements DataGridRowViewInterface
      * @param string $offset
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->cellViews[$offset]);
     }
@@ -155,7 +155,7 @@ class DataGridRowView implements DataGridRowViewInterface
      * @throws \InvalidArgumentException
      * @return \AdminPanel\Component\DataGrid\Column\ColumnTypeInterface
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         if ($this->offsetExists($offset)) {
             return $this->cellViews[$offset];
@@ -171,7 +171,7 @@ class DataGridRowView implements DataGridRowViewInterface
      * @param string $offset
      * @param mixed $value
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
     }
 
@@ -181,7 +181,7 @@ class DataGridRowView implements DataGridRowViewInterface
      *
      * @param string $offset
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
     }
 }

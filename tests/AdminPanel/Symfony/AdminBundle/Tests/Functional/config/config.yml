@@ -26,7 +26,7 @@ framework:
         fallback: '%locale%'
     secret: 'secret123'
     router:
-        resource: "%kernel.root_dir%/config/routing.yml"
+        resource: "%kernel.project_dir%/config/routing.yml"
         strict_requirements: ~
     test: true
     form: true
@@ -35,7 +35,7 @@ framework:
     templating:
         engines: ['twig']
     session:
-        storage_id: 'session.storage.mock_file'
+        storage_factory_id: 'session.storage.mock_file'
     assets: ~
 
 monolog:
@@ -46,7 +46,7 @@ monolog:
 
 twig:
     paths:
-        '%kernel.root_dir%/config/Resources/views': 'app'
+        '%kernel.root_project%/config/Resources/views': 'app'
 
 doctrine:
     dbal:
@@ -58,7 +58,7 @@ doctrine:
             TestMapping:
                 type: 'annotation'
                 is_bundle: false
-                dir: '%kernel.root_dir%/Entity'
+                dir: '%kernel.project_dir%/Entity'
                 prefix: 'AdminPanel\Symfony\AdminBundle\Tests\Functional\Entity'
 
 sensio_framework_extra:

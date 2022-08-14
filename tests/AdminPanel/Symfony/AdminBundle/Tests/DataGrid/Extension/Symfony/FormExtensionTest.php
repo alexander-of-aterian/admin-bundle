@@ -7,7 +7,7 @@ namespace AdminPanel\Symfony\AdminBundleBundle\Tests\DataGrid\Extension\Symfony;
 use AdminPanel\Symfony\AdminBundle\DataGrid\Extension\Symfony\FormExtension;
 use Symfony\Component\Form\FormFactoryInterface;
 
-class FormExtensionTest extends \PHPUnit_Framework_TestCase
+class FormExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testSymfonyFormExtension()
     {

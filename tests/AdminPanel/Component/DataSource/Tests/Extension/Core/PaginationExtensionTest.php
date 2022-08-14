@@ -17,7 +17,7 @@ use AdminPanel\Component\DataSource\Extension\Core\Pagination\PaginationExtensio
 /**
  * Tests for Pagination Extension.
  */
-class PaginationExtensionTest extends \PHPUnit_Framework_TestCase
+class PaginationExtensionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * First case of event (when page is not 1).

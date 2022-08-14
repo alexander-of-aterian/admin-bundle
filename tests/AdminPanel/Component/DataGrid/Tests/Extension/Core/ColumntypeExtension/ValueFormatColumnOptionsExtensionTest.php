@@ -7,7 +7,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnTypeExtension
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\ValueFormatColumnOptionsExtension;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Text;
 
-class ValueFormatColumnOptionsExtensionTest extends \PHPUnit_Framework_TestCase
+class ValueFormatColumnOptionsExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function test_build_cell_view()
     {

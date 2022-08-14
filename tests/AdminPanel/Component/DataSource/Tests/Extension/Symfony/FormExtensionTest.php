@@ -24,7 +24,7 @@ use AdminPanel\Component\DataSource\Tests\Fixtures\Form as TestForm;
 /**
  * Tests for Symfony Form Extension.
  */
-class FormExtensionTest extends \PHPUnit_Framework_TestCase
+class FormExtensionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Provides types.
@@ -67,7 +67,7 @@ class FormExtensionTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Symfony\Component\Form\Form')) {
             $this->markTestSkipped('Symfony Form needed!');

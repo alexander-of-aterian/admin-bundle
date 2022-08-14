@@ -10,7 +10,7 @@ use Symfony\Component\Config\Definition\Processor;
 /**
  * @author Norbert Orzechowicz <norbert@fsi.pl>
  */
-class ConfigurationTest extends \PHPUnit_Framework_TestCase
+class ConfigurationTest extends \PHPUnit\Framework\TestCase
 {
     public function testDefaultOptions()
     {

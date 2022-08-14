@@ -7,7 +7,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core;
 use AdminPanel\Component\DataGrid\Extension\Core\CoreExtension;
 use AdminPanel\Component\DataGrid\Extension\Core\EventSubscriber\ColumnOrder;
 
-class CoreExtensionTest extends \PHPUnit_Framework_TestCase
+class CoreExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testLoadedTypes()
     {

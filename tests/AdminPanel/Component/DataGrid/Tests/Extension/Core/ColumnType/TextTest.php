@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Text;
 
-class TextTest extends \PHPUnit_Framework_TestCase
+class TextTest extends \PHPUnit\Framework\TestCase
 {
     public function testTrimOption()
     {

@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Doctrine;
 
 use AdminPanel\Component\DataGrid\Extension\Doctrine\DoctrineExtension;
 
-class DoctrineExtensionTest extends \PHPUnit_Framework_TestCase
+class DoctrineExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testLoadedTypes()
     {

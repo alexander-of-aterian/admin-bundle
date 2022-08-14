@@ -10,7 +10,7 @@ use AdminPanel\Component\DataSource\Event\DataSourceEvents;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\HttpKernel\KernelInterface;
 
-class ConfigurationBuilderTest extends \PHPUnit_Framework_TestCase
+class ConfigurationBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var KernelInterface
@@ -22,7 +22,7 @@ class ConfigurationBuilderTest extends \PHPUnit_Framework_TestCase
      */
     protected $subscriber;
 
-    public function setUp()
+    public function setUp(): void
     {
         $kernelMockBuilder = $this->getMockBuilder('Symfony\Component\HttpKernel\Kernel')
             ->setConstructorArgs(['dev', true]);

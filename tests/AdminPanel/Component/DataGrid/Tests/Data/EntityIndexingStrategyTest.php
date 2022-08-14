@@ -9,11 +9,11 @@ use AdminPanel\Component\DataGrid\Tests\Fixtures\Entity;
 use AdminPanel\Component\DataGrid\Data\EntityIndexingStrategy;
 use AdminPanel\Component\DataGrid\Tests\Fixtures\EntityManagerMock;
 
-class EntityIndexingStrategyTest extends \PHPUnit_Framework_TestCase
+class EntityIndexingStrategyTest extends \PHPUnit\Framework\TestCase
 {
     protected $dataMapper;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->dataMapper = $this->createMock(DataMapperInterface::class);
     }

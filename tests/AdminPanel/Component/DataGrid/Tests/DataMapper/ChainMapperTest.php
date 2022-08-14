@@ -7,7 +7,7 @@ namespace AdminPanel\Component\DataGrid\Tests\DataMapper;
 use AdminPanel\Component\DataGrid\DataMapper\ChainMapper;
 use AdminPanel\Component\DataGrid\Exception\DataMappingException;
 
-class ChainMapperTest extends \PHPUnit_Framework_TestCase
+class ChainMapperTest extends \PHPUnit\Framework\TestCase
 {
     public function testMappersInChainWithInvalidMappers()
     {

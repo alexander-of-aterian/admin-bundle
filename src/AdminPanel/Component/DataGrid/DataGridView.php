@@ -189,7 +189,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return $this->rowset->count();
     }
@@ -201,7 +201,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @return \AdminPanel\Component\DataGrid\DataGridRowView current element from the rowset
      */
-    public function current()
+    public function current(): mixed
     {
         $index = $this->rowset->key();
         return new DataGridRowView($this, $this->getOriginColumns(), $this->rowset->current(), $index);
@@ -214,7 +214,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @return int
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->rowset->key();
     }
@@ -224,7 +224,7 @@ class DataGridView implements DataGridViewInterface
      * Similar to the next() function for arrays in PHP.
      * Required by interface Iterator.
      */
-    public function next()
+    public function next(): void
     {
         $this->rowset->next();
     }
@@ -236,7 +236,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @return \AdminPanel\Component\DataGrid\DataGridViewInterface
      */
-    public function rewind()
+    public function rewind(): void
     {
         $this->rowset->rewind();
     }
@@ -248,7 +248,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @return bool False if there's nothing more to iterate over
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->rowset->valid();
     }
@@ -260,7 +260,7 @@ class DataGridView implements DataGridViewInterface
      * @param string $offset
      * @return boolean
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->rowset[$offset]);
     }
@@ -273,7 +273,7 @@ class DataGridView implements DataGridViewInterface
      * @return \AdminPanel\Component\DataGrid\DataGridRowViewInterface
      * @throws \InvalidArgumentException
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         if ($this->offsetExists($offset)) {
             return new DataGridRowView($this, $this->getOriginColumns(), $this->rowset[$offset], $offset);
@@ -289,7 +289,7 @@ class DataGridView implements DataGridViewInterface
      * @param string $offset
      * @param mixed $value
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
     }
 
@@ -299,7 +299,7 @@ class DataGridView implements DataGridViewInterface
      *
      * @param string $offset
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
     }
 

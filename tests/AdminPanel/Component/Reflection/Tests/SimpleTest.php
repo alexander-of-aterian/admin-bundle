@@ -11,7 +11,7 @@ use AdminPanel\Component\Reflection\Tests\Fixture\ClassA;
 use AdminPanel\Component\Reflection\Tests\Fixture\ClassAParent;
 use AdminPanel\Component\Reflection\Tests\Fixture\ClassAParentParent;
 
-class SampleTest extends \PHPUnit_Framework_TestCase
+class SampleTest extends \PHPUnit\Framework\TestCase
 {
     public function testClass()
     {

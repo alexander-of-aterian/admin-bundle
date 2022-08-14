@@ -20,7 +20,7 @@ use AdminPanel\Component\DataSource\Tests\Fixtures\DataSourceExtension;
 /**
  * Tests for DataSource.
  */
-class DataSourceTest extends \PHPUnit_Framework_TestCase
+class DataSourceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Basic creation of DataSource.

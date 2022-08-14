@@ -6,14 +6,14 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Boolean;
 
-class BooleanTest extends \PHPUnit_Framework_TestCase
+class BooleanTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Boolean
      */
     private $column;
 
-    public function setUp()
+    public function setUp(): void
     {
         $column = new Boolean();
         $column->setName('available');

@@ -39,7 +39,7 @@ class FunctionalTestCase extends WebTestCase
      *
      * @return KernelInterface A KernelInterface instance
      */
-    protected static function createKernel(array $options = array())
+    protected static function createKernel(array $options = array()): KernelInterface
     {
         return new AppKernel(
             'test',
@@ -50,7 +50,7 @@ class FunctionalTestCase extends WebTestCase
     /**
      * {@inheritDoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         self::bootKernel();
 
@@ -69,7 +69,7 @@ class FunctionalTestCase extends WebTestCase
     /**
      * {@inheritDoc}
      */
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
 

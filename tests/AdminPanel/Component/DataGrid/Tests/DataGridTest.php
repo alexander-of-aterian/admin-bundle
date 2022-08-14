@@ -12,7 +12,7 @@ use AdminPanel\Component\DataGrid\Tests\Fixtures\FooExtension;
 use AdminPanel\Component\DataGrid\Tests\Fixtures\ColumnType\FooType;
 use AdminPanel\Component\DataGrid\Tests\Fixtures\Entity;
 
-class DataGridTest extends \PHPUnit_Framework_TestCase
+class DataGridTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \AdminPanel\Component\DataGrid\DataGridFactoryInterface
@@ -34,7 +34,7 @@ class DataGridTest extends \PHPUnit_Framework_TestCase
      */
     private $datagrid;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->dataMapper = $this->createMock(DataMapperInterface::class);
         $this->dataMapper->expects($this->any())

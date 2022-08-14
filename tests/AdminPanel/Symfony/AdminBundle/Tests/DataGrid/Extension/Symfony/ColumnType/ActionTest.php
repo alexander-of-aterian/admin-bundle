@@ -10,7 +10,7 @@ use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColu
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\RouterInterface;
 
-class ActionTest extends \PHPUnit_Framework_TestCase
+class ActionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RouterInterface
@@ -27,7 +27,7 @@ class ActionTest extends \PHPUnit_Framework_TestCase
      */
     private $column;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->router = $this->createMock('Symfony\Component\Routing\RouterInterface');
         $this->requestStack = $this->createMock('Symfony\Component\HttpFoundation\RequestStack');

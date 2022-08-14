@@ -5,7 +5,7 @@ namespace AdminPanel\Component\PropertyObserver\Tests;
 use AdminPanel\Component\PropertyObserver\MultiplePropertyObserver;
 use AdminPanel\Component\PropertyObserver\PropertyObserver;
 
-class PropertyObserverTest extends \PHPUnit_Framework_TestCase
+class PropertyObserverTest extends \PHPUnit\Framework\TestCase
 {
     public function testValueChanged()
     {

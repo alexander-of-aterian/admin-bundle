@@ -9,7 +9,7 @@ use AdminPanel\Component\DataSource\Extension\Symfony\Form\Field\FormFieldExtens
 use ReflectionMethod;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
-class FormFieldExtensionTest extends \PHPUnit_Framework_TestCase
+class FormFieldExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testBuildBooleanFormWhenOptionsProvided()
     {

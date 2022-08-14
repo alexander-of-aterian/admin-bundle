@@ -8,7 +8,7 @@ use AdminPanel\Component\DataGrid\Tests\Fixtures\Entity as Fixture;
 use AdminPanel\Component\DataGrid\Extension\Doctrine\ColumnType\Entity;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColumnOptionsExtension;
 
-class EntityTypeTest extends \PHPUnit_Framework_TestCase
+class EntityTypeTest extends \PHPUnit\Framework\TestCase
 {
     public function testGetValue()
     {

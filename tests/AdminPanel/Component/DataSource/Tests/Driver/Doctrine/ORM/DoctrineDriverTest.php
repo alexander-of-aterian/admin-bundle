@@ -22,7 +22,7 @@ use AdminPanel\Component\DataSource\Tests\Fixtures\DoctrineDriverExtension;
 /**
  * Tests for Doctrine driver.
  */
-class DoctrineDriverTest extends \PHPUnit_Framework_TestCase
+class DoctrineDriverTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \AdminPanel\Component\DataSource\Tests\Fixtures\DoctrineDriverExtension
@@ -32,7 +32,7 @@ class DoctrineDriverTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Doctrine\ORM\EntityManager')) {
             $this->markTestSkipped('Doctrine needed!');
@@ -658,7 +658,7 @@ class DoctrineDriverTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($this->em);
     }

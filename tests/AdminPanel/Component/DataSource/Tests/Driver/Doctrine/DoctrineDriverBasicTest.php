@@ -17,12 +17,12 @@ use AdminPanel\Component\DataSource\Tests\Fixtures\FieldExtension;
 /**
  * Basic tests for Doctrine driver.
  */
-class DoctrineDriverBasicTest extends \PHPUnit_Framework_TestCase
+class DoctrineDriverBasicTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('Doctrine\ORM\EntityManager')) {
             $this->markTestSkipped('Doctrine needed!');

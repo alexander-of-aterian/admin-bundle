@@ -11,7 +11,7 @@ use AdminPanel\Component\DataSource\Field\FieldView;
 /**
  * Tests for FieldView.
  */
-class DataSourceViewTest extends \PHPUnit_Framework_TestCase
+class DataSourceViewTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Checks creation.

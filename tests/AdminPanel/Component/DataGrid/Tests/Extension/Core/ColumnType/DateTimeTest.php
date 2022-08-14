@@ -7,14 +7,14 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\DateTime;
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColumnOptionsExtension;
 
-class DateTimeTest extends \PHPUnit_Framework_TestCase
+class DateTimeTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DateTime
      */
     private $column;
 
-    public function setUp()
+    public function setUp(): void
     {
         $column = new DateTime();
         $column->setName('datetime');

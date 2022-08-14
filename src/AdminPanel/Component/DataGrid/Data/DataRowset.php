@@ -34,7 +34,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->data);
     }
@@ -46,7 +46,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @return \AdminPanel\Component\DataGrid\DataGridRowViewInterface current element from the rowset
      */
-    public function current()
+    public function current(): mixed
     {
         return current($this->data);
     }
@@ -58,7 +58,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @return int
      */
-    public function key()
+    public function key(): mixed
     {
         return key($this->data);
     }
@@ -70,7 +70,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @return \AdminPanel\Component\DataGrid\DataGridRowViewInterface|boolean
      */
-    public function next()
+    public function next(): void
     {
         next($this->data);
     }
@@ -80,7 +80,7 @@ class DataRowset implements DataRowsetInterface
      * Similar to the reset() function for arrays in PHP.
      * Required by interface Iterator.
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->data);
     }
@@ -92,7 +92,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @return bool False if there's nothing more to iterate over
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -104,7 +104,7 @@ class DataRowset implements DataRowsetInterface
      * @param string $offset
      * @return boolean
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->data[$offset]);
     }
@@ -117,7 +117,7 @@ class DataRowset implements DataRowsetInterface
      * @throws \InvalidArgumentException
      * @return \AdminPanel\Component\DataGrid\DataGridRowViewInterface
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         if ($this->offsetExists($offset)) {
             return $this->data[$offset];
@@ -133,7 +133,7 @@ class DataRowset implements DataRowsetInterface
      * @param string $offset
      * @param mixed $value
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
     }
 
@@ -143,7 +143,7 @@ class DataRowset implements DataRowsetInterface
      *
      * @param string $offset
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
     }
 }

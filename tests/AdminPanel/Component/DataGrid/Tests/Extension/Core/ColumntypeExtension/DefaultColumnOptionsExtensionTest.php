@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumntypeExtension
 
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnTypeExtension\DefaultColumnOptionsExtension;
 
-class DefaultColumnOptionsExtensionTest extends \PHPUnit_Framework_TestCase
+class DefaultColumnOptionsExtensionTest extends \PHPUnit\Framework\TestCase
 {
     public function testBuildHeaderView()
     {

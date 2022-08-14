@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataSource\Tests\Driver\Doctrine\ORM;
 
 use AdminPanel\Component\DataSource\Driver\Doctrine\ORM\DoctrineResult;
 
-class DoctrineResultTest extends \PHPUnit_Framework_TestCase
+class DoctrineResultTest extends \PHPUnit\Framework\TestCase
 {
     public function testEmptyPaginator()
     {

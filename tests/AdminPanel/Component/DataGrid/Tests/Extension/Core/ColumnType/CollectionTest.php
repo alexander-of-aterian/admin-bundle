@@ -6,7 +6,7 @@ namespace AdminPanel\Component\DataGrid\Tests\Extension\Core\ColumnType;
 
 use AdminPanel\Component\DataGrid\Extension\Core\ColumnType\Collection;
 
-class CollectionTest extends \PHPUnit_Framework_TestCase
+class CollectionTest extends \PHPUnit\Framework\TestCase
 {
     public function test_filter_value()
     {

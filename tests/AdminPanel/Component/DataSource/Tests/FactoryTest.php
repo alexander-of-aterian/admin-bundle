@@ -12,7 +12,7 @@ use AdminPanel\Component\DataSource\Driver\DriverFactoryManager;
 /**
  * Tests for DataSourceFactory.
  */
-class FactoryTest extends \PHPUnit_Framework_TestCase
+class FactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Checks proper extensions loading.

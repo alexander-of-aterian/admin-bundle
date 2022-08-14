@@ -11,7 +11,7 @@ use AdminPanel\Symfony\AdminBundle\Event\MenuEvent;
 use AdminPanel\Symfony\AdminBundle\Menu\Item\Item;
 use Symfony\Component\HttpFoundation\Request;
 
-class LocaleMenuListenerTest extends \PHPUnit_Framework_TestCase
+class LocaleMenuListenerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var LocaleMenuListener
@@ -23,7 +23,7 @@ class LocaleMenuListenerTest extends \PHPUnit_Framework_TestCase
      */
     private $requestStack;
 
-    public function setUp()
+    public function setUp(): void
     {
         $translator = $this->prophesize(TranslatorInterface::class);
         $this->requestStack = $this->prophesize(RequestStack::class);

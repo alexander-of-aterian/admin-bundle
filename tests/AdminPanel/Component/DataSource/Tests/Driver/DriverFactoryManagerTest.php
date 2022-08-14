@@ -11,7 +11,7 @@ use AdminPanel\Component\DataSource\Driver\DriverFactoryManager;
 /**
  * Basic tests for Doctrine driver.
  */
-class DriverFactoryManagerTest extends \PHPUnit_Framework_TestCase
+class DriverFactoryManagerTest extends \PHPUnit\Framework\TestCase
 {
     public function testBasicManagerOperations()
     {

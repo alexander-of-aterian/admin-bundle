@@ -9,11 +9,11 @@ use AdminPanel\Component\DataGrid\DataGridFactory;
 use AdminPanel\Component\DataGrid\DataMapper\DataMapperInterface;
 use AdminPanel\Component\DataGrid\Tests\Fixtures\FooExtension;
 
-class DataGridFactoryTest extends \PHPUnit_Framework_TestCase
+class DataGridFactoryTest extends \PHPUnit\Framework\TestCase
 {
     private $factory;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $extensions = [
             new FooExtension(),
